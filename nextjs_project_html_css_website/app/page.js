@@ -6,15 +6,17 @@ import Image from 'next/image';
 import PopularFoods from '@/components/PopularFoods';
 import TrendingFood from '@/components/TrendingFood';
 
+
 export default function Home() {
+  
   return (
-    <>
+    <div className=''>
       <Navbar />
       <MainSection />
       <About />
       <Foods />
       <PopularFoods />
       <TrendingFood />
-    </>
+    </div>
   );
 }

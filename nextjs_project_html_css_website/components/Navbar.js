@@ -3,38 +3,36 @@ import React from 'react';
 export default function Navbar() {
   return (
     <header>
-      <nav class='flex overflow-hidden '>
+      <nav class='flex overflow-hidden sm:bg-[--primary-color] bg-[--primary-color] border-b'>
         {' '}
         {/* header__nav */}
-        <div class='flex-1 flex relative p-5'>
+        <div class='flex flex-[1] items-center pl-5 py-4 md:py-6 sm:bg[--primary-color]'>
           {' '}
           {/* header__logo  */}
           <h4
             data-aos='fade-down'
-            className='pl-7 font-bold text-2xl uppercase font-sans text-white opacity-80'
+            className=' font-bold text-3xl uppercase font-sans xm:text-[--secondary-color] text-white opacity-80 cursor-pointer'
           >
             Sushiman
           </h4>
-          <div class=' absolute inset-0 w-full -z-10 bg-[--primary-color]'></div>
-          {/* header__logo-overlay */}
         </div>
         <ul
-          className='p-5 flex flex-[1.236] items-center justify-end gap-4 md:gap-8 lg:gap-12 xl:gap-16 ' /* header__menu */
+          className='py-3 md:py-6 pr-6 p md:flex flex-[1.2] items-center justify-end space-x-5 md:space-x-6 lg:space-x-10 hidden md:bg-[--color-creamson] bg-[--primary-color]' /* header__menu */
           data-aos='fade-down'
         >
-          <li className='font-medium font-serif text-[--secondary-color] text-base uppercase cursor-pointer'>
+          <li className='relative font-medium font-serif transition-all duration-300 ease-in-out text-[--secondary-color] text-base md:text-lg uppercase cursor-pointer hover:text-[--primary-color]  before:content-[""] before:w-3 before:h-3 before:bg-[--primary-color] before:absolute before:hidden hover:before:flex before:bottom-7 before:right-[45%] before:mx-auto before:rounded-full'>
             <a href='#menu'>Menu</a>
           </li>
-          <li className='font-medium  font-serif text-[--secondary-color] text-base uppercase cursor-pointer'>
+          <li className='relative font-medium font-serif transition-all duration-300 ease-in-out text-[--secondary-color] text-base md:text-lg uppercase cursor-pointer hover:text-[--primary-color]  before:content-[""] before:w-3 before:h-3 before:bg-[--primary-color] before:absolute before:hidden hover:before:flex before:bottom-7 before:right-[45%] before:mx-auto before:rounded-full'>
             <a href='#food'>Food</a>
           </li>
-          <li className='font-medium  font-serif text-[--secondary-color] text-base uppercase cursor-pointer'>
+          <li className='relative font-medium font-serif transition-all duration-300 ease-in-out text-[--secondary-color] text-base md:text-lg uppercase cursor-pointer hover:text-[--primary-color]  before:content-[""] before:w-3 before:h-3 before:bg-[--primary-color] before:absolute before:hidden hover:before:flex before:bottom-7 before:right-[45%] before:mx-auto before:rounded-full'>
             <a href='#services'>Services</a>
           </li>
-          <li className='font-medium  font-serif text-[--secondarycolor] text-base uppercase cursor-pointer'>
+          <li className='relative font-medium font-serif transition-all duration-300 ease-in-out text-[--secondary-color] text-base md:text-lg uppercase cursor-pointer hover:text-[--primary-color]  before:content-[""] before:w-3 before:h-3 before:bg-[--primary-color] before:absolute before:hidden hover:before:flex before:bottom-7 before:right-[45%] before:mx-auto before:rounded-full'>
             <a href='#about-us'>About Us</a>
           </li>
-          <li className='font-medium  font-serif text-[--secondarycolor] text-base uppercase cursor-pointer'>
+          <li className='font-medium  font-serif text-[--secondarycolor] text md:text-lg uppercase cursor-pointer'>
             <img
               src='assets/search.svg'
               alt='search'
@@ -43,7 +41,7 @@ export default function Navbar() {
           </li>
         </ul>
         <ul
-          class=' p-5 flex items-center justify-end gap-16 list-none sm:hidden sm:gap-20 relative' /* header__menu-mobile */
+          className='flex items-center justify-end mx-4 gap- list-none md:hidden  relative' /* header__menu-mobile */
           data-aos='fade-down'
         >
           <li>
