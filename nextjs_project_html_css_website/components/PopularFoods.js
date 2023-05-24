@@ -3,94 +3,160 @@ import React from 'react';
 export default function PopularFoods() {
   return (
     <>
-      <section class='popular-foods' id='menu'>
-        <h2 class='popular-foods__title' data-aos='flip-up'>
+      <section
+        className='p-16 flex flex-col bg-[--primary-color] bg-[url("../assets/popular_bg.png)] bg-no-repeat bg-contain overflow-hidden '
+        id='menu'
+      >
+        {/* popular-foods */}
+        <h2
+          className=' text-6xl font-serif font-semibold leading-[78px] text-white text-center'
+          data-aos='flip-up'
+        >
+          {/* popular-foods__title */}
           Popular Food / 人気
         </h2>
 
         <div
-          class='popular-foods__filters sushi__hide-scrollbar'
-          data-aos='fade-up'
+          className='mt-12 max-w-full overflow-x-auto flex justify-center gap-6 sushi__hide-scrollbar'
+          data-aos='fade-up' /* popular-foods__filters */
         >
-          <button class='popular-foods__filter-btn active'>All</button>
-          <button class='popular-foods__filter-btn'>
-            <img src='/assets/sushi-9.png' alt='sushi 9' />
+          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white text-[--primary-color] rounded-[46px] text-base font-light leading-6 cursor-pointer'>
+            All
+          </button>{' '}
+          {/* popular-foods__filter-btn */}
+          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+            {' '}
+            {/* popular-foods__filter-btn */}
+            <img
+              src='/assets/sushi-9.png'
+              alt='sushi 9'
+              className='w-9 h-9 object-contain'
+            />
             Sushi
           </button>
-          <button class='popular-foods__filter-btn'>
-            <img src='/assets/sushi-8.png' alt='sushi 8' />
+          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+            <img
+              src='/assets/sushi-8.png'
+              alt='sushi 8'
+              className='w-9 h-9 object-contain'
+            />
             Ramen
           </button>
-          <button class='popular-foods__filter-btn'>
-            <img src='/assets/sushi-7.png' alt='sushi 7' />
+          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+            <img
+              src='/assets/sushi-7.png'
+              alt='sushi 7'
+              className='w-9 h-9 object-contain'
+            />
             Udon
           </button>
-          <button class='popular-foods__filter-btn'>
-            <img src='/assets/sushi-6.png' alt='sushi 6' />
+          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+            <img
+              src='/assets/sushi-6.png'
+              alt='sushi 6'
+              className='w-9 h-9 object-contain'
+            />
             Danggo
           </button>
-          <button class='popular-foods__filter-btn'>All</button>
+          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+            All
+          </button>
         </div>
 
-        <div class='popular-foods__catalogue' data-aos='fade-up'>
-          <article class='popular-foods__card'>
+        <div className=' flex mt-16 gap-14' data-aos='fade-up'>
+          {/* popular-foods__catalogue */}
+          <article className='p-10 mt-auto min-w-[260px] h-fit flex items-center flex-col rounded-[36px] bg-white/5 border border-white/20'>
+            {/* popular-foods__card */}
             <img
-              class='popular-foods__card-image'
+              className='w-28 h-20 object-contain' /* popular-foods__card-image */
               src='assets/sushi-12.png'
               alt='sushi-12'
             />
-            <h4 class='popular-foods__card-title'>Chezu Sushi</h4>
+            <h4 className='mt-12 font-semibold leading-8 text-white text-center'>
+              Chezu Sushi
+            </h4>
+            {/* popular-foods__card-title */}
 
-            <div class='popular-foods__card-details flex-between'>
-              <div class='popular-foods__card-rating'>
+            <div className='flex justify-between items-center w-full mt-8'>
+              {/* popular-foods__card-details */}
+              <div className='flex gap-1 w-6 h6 object-contain'>
+                {/* popular-foods__card-rating */}
                 <img src='assets/star.svg' alt='star' />
-                <p>4.9</p>
+                <p className='text-xl font-light fon-serif text-white'>4.9</p>
               </div>
 
-              <p class='popular-foods__card-price'>$21.00</p>
+              <p className='text-xl font-medium font-serif text-white'>
+                $21.00
+              </p>
+              {/* popular-foods__card-price */}
             </div>
           </article>
 
-          <article class='popular-foods__card active-card'>
+          <article className='bg-white min-w-[340px] w-44 flex flex-col items-center  justify-center p-14 rounded-[48px]'>
+            {/* popular-foods__card active-card */}
             <img
-              class='popular-foods__card-image'
+              className='w- h-30 object-contain '
               src='assets/sushi-11.png'
               alt='sushi-11'
-            />
-            <h4 class='popular-foods__card-title'>Original Sushi</h4>
-
-            <div class='popular-foods__card-details flex-between'>
-              <div class='popular-foods__card-rating'>
-                <img src='assets/star.svg' alt='star' />
-                <p>5.0</p>
+            />{' '}
+            {/* popular-foods__card-image */}
+            <h4 className='text-[--black-500] mt-12 font-semibold text-3xl leading-8 font-serif items-center'>
+              Original Sushi
+            </h4>
+            {/* popular-foods__card-title */}
+            <div className='flex justify-between items-center w-full mt-8'>
+              {/* popular-foods__card-details */}
+              <div className='flex items-center gap-2'>
+                {/* popular-foods__card-rating */}
+                <img
+                  src='assets/star.svg'
+                  alt='star'
+                  className='w-8 h-8'
+                  object-contain
+                />
+                <p className='text-xl text-[--gray-100]'>5.0</p>
               </div>
 
-              <p class='popular-foods__card-price'>$19.00</p>
+              <p className='text-xl text-[--seconary-color] font-medium font-serif '>
+                $19.00
+              </p>
+              {/* popular-foods__card-price */}
             </div>
           </article>
 
-          <article class='popular-foods__card'>
+          <article className='p-10 mt-auto min-w-[260px] h-fit flex items-center flex-col rounded-[36px] bg-white/5 border border-white/20'>
             <img
-              class='popular-foods__card-image'
+              className='w-28 h-20 object-contain'
               src='assets/sushi-10.png'
               alt='sushi-10'
             />
-            <h4 class='popular-foods__card-title'>Ramen Legendo</h4>
+            <h4 className='mt-12 font-semibold leading-8 text-white text-center'>
+              Ramen Legendo
+            </h4>
 
-            <div class='popular-foods__card-details flex-between'>
-              <div class='popular-foods__card-rating'>
+            <div className='flex justify-between items-center w-full mt-8'>
+              <div className='flex gap-1 w-6 h6 object-contain'>
+                {/* popular-foods__card-rating */}
                 <img src='assets/star.svg' alt='star' />
-                <p>4.7</p>
+                <p className='text-xl font-light fon-serif text-white'> 4.7</p>
               </div>
 
-              <p class='popular-foods__card-price'>$13.00</p>
+              <p className='text-xl font-medium font-serif text-white'>
+                $13.00
+              </p>
+              {/* popular-foods__card-price */}
             </div>
           </article>
         </div>
 
-        <button class='popular-foods__button'>
+        <button className='flex items-center text-xl rounded-full w-fit py-5 px-8 mt-20 mx-auto font-medium leading-6 font-serif text-white outline-none bg-[--secondary-color] cursor-pointer hover:opacity-90'>
+          {/* popular-foods__button */}
           Explore Food
-          <img src='assets/arrow-right.svg' alt='arrow-right' />
+          <img
+            src='assets/arrow-right.svg'
+            alt='arrow-right'
+            className='w-3.5 h-3.5 object-contain ml-5'
+          />
         </button>
       </section>
     </>
