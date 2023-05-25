@@ -27,6 +27,9 @@ module.exports = {
         colorwhite: '--color-white',
         colorcreamson: '--color-creamson',
       },
+      container: {
+        maxWidth: '550px',
+      },
     },
   },
   plugins: [],

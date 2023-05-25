@@ -4,12 +4,12 @@ export default function PopularFoods() {
   return (
     <>
       <section
-        className='p-16 flex flex-col bg-[--primary-color] bg-[url("../assets/popular_bg.png)] bg-no-repeat bg-contain overflow-hidden '
+        className='p-16 flex flex-col bg-[--primary-color]  bg-[url("../assets/popular_bg.png)] bg-no-repeat bg-contain overflow-hidden sm:p-16 sm:px-8'
         id='menu'
       >
         {/* popular-foods */}
         <h2
-          className=' text-6xl font-serif font-semibold leading-[78px] text-white text-center'
+          className=' text-2xl sm:text-5xl md:text-7xl font-serif font-semibold text-white text-center'
           data-aos='flip-up'
         >
           {/* popular-foods__title */}
@@ -17,14 +17,14 @@ export default function PopularFoods() {
         </h2>
 
         <div
-          className='mt-12 max-w-full overflow-x-auto flex justify-center gap-6 sushi__hide-scrollbar'
+          className='mt-12 max-w-full overflow-x-auto flex justify-center gap-6 sushi__hide-scrollbar flex-wrap'
           data-aos='fade-up' /* popular-foods__filters */
         >
           <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white text-[--primary-color] rounded-[46px] text-base font-light leading-6 cursor-pointer'>
             All
           </button>{' '}
           {/* popular-foods__filter-btn */}
-          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color] min-w-fit'>
             {' '}
             {/* popular-foods__filter-btn */}
             <img
@@ -34,7 +34,7 @@ export default function PopularFoods() {
             />
             Sushi
           </button>
-          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+          <button className='py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color] min-w-fit'>
             <img
               src='/assets/sushi-8.png'
               alt='sushi 8'
@@ -42,7 +42,7 @@ export default function PopularFoods() {
             />
             Ramen
           </button>
-          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color] min-w-fit'>
             <img
               src='/assets/sushi-7.png'
               alt='sushi 7'
@@ -50,7 +50,7 @@ export default function PopularFoods() {
             />
             Udon
           </button>
-          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
+          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color] min-w-fit'>
             <img
               src='/assets/sushi-6.png'
               alt='sushi 6'
@@ -58,12 +58,12 @@ export default function PopularFoods() {
             />
             Danggo
           </button>
-          <button className='popular-foods__filter-btn py-2.5 px-7 flex items-center gap-2.5 bg-white/20 rounded-[46px] text-base font-light leading-6 text-white cursor-pointer  hover:bg-white hover:text-[--primary-color]'>
-            All
-          </button>
         </div>
 
-        <div className=' flex mt-16 gap-14' data-aos='fade-up'>
+        <div
+          className='flex md:flex-row flex-col mx-auto mt-16 gap-14'
+          data-aos='fade-up'
+        >
           {/* popular-foods__catalogue */}
           <article className='p-10 mt-auto min-w-[260px] h-fit flex items-center flex-col rounded-[36px] bg-white/5 border border-white/20'>
             {/* popular-foods__card */}
